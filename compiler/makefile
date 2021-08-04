@@ -1,10 +1,9 @@
 cc=gcc
-CFLAGS = -Wall -g
+CFLAGS = -g
 
 SRC= $(wildcard src/*.c)
 
 build: ${SRC}
-	gcc -o $@ $^ ${CFLAGS}
-
-clean: 
+	gcc -g {CFLAGS} -c {SRC}
 	
+clean: 
