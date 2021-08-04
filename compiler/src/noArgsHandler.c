@@ -3,11 +3,9 @@
 #include <stdbool.h>
 #include "functionHandler.h"
 
-int checkForNoArgs( int argc, char *argv[] )
+void checkForNoArgs()
 {
-    if(argc == 0)
-    {
-        printf("No arguments were supplied");
-    }
+    printf("Current Compiler Version: 1.0.0.0");
+    printf("Developed by: Tech Penguin INC.");
     return 0;
 }

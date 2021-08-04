@@ -9,10 +9,10 @@ EXT=svrs
 BUILD_TARG = ${SRC} src/functionHandler.h
 build: ${BUILD_TARG}
 	${cc} -g -Wall -o slv ${SRC}
-	${cc} -g ${CFLAGS} ${SRC} -o objects/$@.o
+	${cc} -g ${CFLAGS} ${SRC}
 	
 clean: 
-	rm ${wildcard objects/*}
+	rm ${wildcard *.o}
 	rm ${wildcard *.exe}
 
 rebuild:

@@ -5,16 +5,19 @@
 
 int main( int argc, char *argv[] )
 {
-    createProjectFiles(argc,argv);
-    checkForNoArgs(argc,argv);
-
+    // NO ARG RETURN
+    if(argc==1) 
+    {
+        checkForNoArgs();
+    }
     // INIT
     if(strcmp(argv[2],"init") && argc==2){createInit();}
 
     //CREATE
-    if(strcmp(argv[2],"create")&&strcmp(argv[3],"new"), argc==4){
-        char* path = argv[4];
-
+    if(strcmp(argv[1],"create")&&strcmp(argv[2],"new"), argc==3){
+        	createProjectFiles();
+	
+	return 0;
     }
     // COMPILE
     if(strcmp(argv[2],"compile") && argc==3){
