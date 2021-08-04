@@ -6,7 +6,9 @@ SRC= $(wildcard src/*.c)
 objects = $(addprefix $(OBJDIR)/,${wildcard *.o})
 
 build: ${objects}
+	${cc} -g -Wall -o slv src/slv.c
 	${cc} -g ${CFLAGS} ${SRC}
 	
 clean: 
 	rm ${wildcard *.o}
+	rm ${wildcard *.exe}
