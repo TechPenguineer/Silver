@@ -1,7 +1,10 @@
 cc=gcc
 CFLAGS = -Wall -g
 
-SRC= $(wildcard *.c)
+SRC= $(wildcard src/*.c)
 
 build: ${SRC}
 	gcc -o $@ $^ ${CFLAGS}
+
+clean: 
+	
