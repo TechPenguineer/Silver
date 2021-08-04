@@ -3,11 +3,8 @@
 #include <stdbool.h>
 int main( int argc, char *argv[] )
 {
-    bool commandFound;
-    if(commandFound){}else{printf("SLV: Command not found");}
-    if(argc == 1)
+    if(!argc)
     {
-         commandFound=false;
     }
     // CREATE COMMAND
     if(argv[1] == "create")
@@ -25,7 +22,8 @@ int main( int argc, char *argv[] )
                  char projectname[50]; 
                  strcpy(projectname, argv[3]);
                  printf(projectname);
-            } else if(argc == 2)
+            } 
+            if(argc == 2)
             {
                printf("Not enough arguments supplied to execute this command");
             }
