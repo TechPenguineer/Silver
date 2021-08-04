@@ -5,6 +5,7 @@
 
 int main( int argc, char *argv[] )
 {
-    createProjectFiles();
+    createProjectFiles(argc,argv);
+    checkForNoArgs(argc,argv);
     return 0;
 }
