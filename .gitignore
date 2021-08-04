@@ -1,7 +1,7 @@
 /.dist
 
 # REMOVE ALL OBJECT FILES
-*/*.o
+#*/*.o
 */*.exe
 
 */*.stackdump
