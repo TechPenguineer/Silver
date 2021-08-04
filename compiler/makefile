@@ -1,12 +1,13 @@
 cc=gcc
 CFLAGS = -g -c 
 OBJDIR = objects
-SRC= $(wildcard src/*.c)
+SRC= $(wildcard src/*.c )
+SRCH= $(wildcard src/*.h )
 
-objects = $(addprefix $(OBJDIR)/,${wildcard *.o})
 
-build: ${objects}
-	${cc} -g -Wall -o slv src/slv.c
+BUILD_TARG = ${SRC} src/functionHandler.h
+build: ${BUILD_TARG}
+	${cc} -g -Wall -o slv ${SRC}
 	${cc} -g ${CFLAGS} ${SRC}
 	
 clean: 
