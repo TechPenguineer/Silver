@@ -1,7 +1,7 @@
 cc=gcc
 CFLAGS = -g -c 
 OBJDIR = objects
-SRC= $(wildcard src/*.c )
+SRC= $(wildcard src/*.c src/util/*.c )
 SRCH= $(wildcard src/*.h )
 
 

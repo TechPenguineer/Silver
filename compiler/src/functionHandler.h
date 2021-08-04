@@ -3,5 +3,6 @@
 
 int createProjectFiles(int argc, char *argv[]);
 int checkForNoArgs(int argc, char *argv[]);
+int createInit(int argc, char *argv[]);
 
 #endif // !FUNCTION_HANDLER_H
