@@ -1,0 +1,4 @@
+/.dist
+
+# REMOVE ALL OBJECT FILES
+/*.o
