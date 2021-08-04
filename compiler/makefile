@@ -12,7 +12,7 @@ build: ${BUILD_TARG}
 	${cc} -g ${CFLAGS} ${SRC} -o objects/$@.o
 	
 clean: 
-	rm ${wildcard *.o}
+	rm ${wildcard objects/*}
 	rm ${wildcard *.exe}
 
 rebuild:
