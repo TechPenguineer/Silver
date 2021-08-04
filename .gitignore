@@ -3,3 +3,5 @@
 # REMOVE ALL OBJECT FILES
 */*.o
 */*.exe
+
+*/*.stackdump

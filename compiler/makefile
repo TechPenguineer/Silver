@@ -13,3 +13,7 @@ build: ${BUILD_TARG}
 clean: 
 	rm ${wildcard *.o}
 	rm ${wildcard *.exe}
+
+rebuild:
+	make clean
+	make build
