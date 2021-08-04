@@ -1,9 +1,12 @@
 cc=gcc
-CFLAGS = -g
-
+CFLAGS = -g -c 
+OBJDIR = objects
 SRC= $(wildcard src/*.c)
 
-build: ${SRC}
-	gcc -g {CFLAGS} -c {SRC}
+objects = $(addprefix $(OBJDIR)/,${wildcard *.o})
+
+build: ${objects}
+	${cc} -g ${CFLAGS} ${SRC}
 	
 clean: 
+	rm ${wildcard *.o}
